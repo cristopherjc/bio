@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #201e1f;
+}
+
+nav {
+  background-color: #201e1f;
+}
+
+.navbar-brand {
+  color: #f2c14e !important;
+}
+
+.nav-link {
+  color: #f2c14e;
+}
+
+.nav-link:hover {
+  color: #f78154;
+}
+
+.nav-link:focus,
+.nav-link:active {
+  color: #f78154;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+h4 {
+  color: #ffffff;
+}
+
+li {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+button,
+.btn {
+  background: #fcba04;
+  color: #201e1f;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #31e981;
+  color: #201e1f;
+}
+
+#app {
+  background-color: #858786;
+}
+
+footer {
+  background-color: #201e1f;
+}
+
+#texto-footer {
+  color: #f2c14e;
+}
+
+.bi {
+  color: #f2c14e;
+}
+.card {
+  background-color: #ffffff !important;
+}
+
+#texto-card {
+  color: #201e1f;
+}
