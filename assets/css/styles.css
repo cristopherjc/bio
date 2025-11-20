@@ -4,8 +4,20 @@ body {
   background-color: #201e1f;
 }
 
-nav {
-  background-color: #201e1f;
+.navbar {
+  background-color: #201e1f !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f2c14e' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  width: auto !important;
 }
 
 .navbar-brand {
@@ -103,4 +115,22 @@ footer {
 
 #texto-card {
   color: #201e1f;
+}
+
+@media (max-width: 768px) {
+  .container,
+  #app {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
 }
