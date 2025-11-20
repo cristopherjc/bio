@@ -44,6 +44,41 @@ document.addEventListener("DOMContentLoaded", () => {
       const response = await fetch("/pages/" + page);
       const html = await response.text();
       app.innerHTML = html;
+
+      // --- NUEVO: captura formularios de contacto en la página cargada ---
+      const form = app.querySelector("form");
+      if (form) {
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault(); // evita que la página recargue
+          const formData = new FormData(form);
+
+          try {
+            const res = await fetch(form.action, {
+              method: form.method,
+              body: formData,
+            });
+
+            // leer la respuesta
+            const text = await res.text();
+
+            Swal.fire({
+              icon: "success",
+              title: "¡Mensaje enviado!",
+              text: "Gracias por contactarme, responderé lo antes posible.",
+              confirmButtonColor: "#3085d6",
+            });
+
+            form.reset(); // limpia el formulario
+          } catch (err) {
+            Swal.fire({
+              icon: "error",
+              title: "Error",
+              text: "No se pudo enviar el mensaje",
+              confirmButtonColor: "#d33",
+            });
+          }
+        });
+      }
     } catch (error) {
       app.innerHTML = "<p>Error al cargar página.</p>";
     }

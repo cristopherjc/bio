@@ -28,6 +28,7 @@ if (strlen($mensaje) > 1000) {
 $stmt = $db->prepare("INSERT INTO mensajes (nombre, correo, mensaje) VALUES (?, ?, ?)");
 $stmt->execute([$nombre, $correoValidado, $mensaje]);
 
-header("Location: ../index.php?ok=1&page=contacto.php");
+// Respuesta exitosa
+echo json_encode(["status" => "ok", "message" => "Mensaje enviado correctamente"]);
 exit;
 ?>
