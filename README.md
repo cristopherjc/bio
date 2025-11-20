@@ -14,7 +14,7 @@ Solo deben dar click en Visit Site.
 
 La aplicación es redirigida por tunel desde mi raspberry hasta ngrok y asi es servida en internet.
 
-Ngrok: https://ngrok.com/
+Ngrok: https://ngrok.com/ .
 
-Este es el servidor y host
+Este es el servidor y host.
 ![Image](https://github.com/user-attachments/assets/0778bca0-131d-4e70-97d4-64484ff7b14b)
